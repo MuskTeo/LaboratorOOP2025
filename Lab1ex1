@@ -1,0 +1,56 @@
+
+#include <iostream>
+#include <cctype>
+#include <cstdlib>
+
+int my_atoi(const char* str) {
+    int r = 0;
+    int sg = 1; 
+    while (*str == ' ' || *str == '\n' ) {
+        str++;
+    }
+    if (*str == '-' || *str == '+') {
+        if (*str == '-') {
+            sg = -1;
+        }
+        str++;  
+    }
+    while (*str >= '0' && *str <= '9') {
+        r = r * 10 + (*str - '0');
+        str++;
+    }
+    return r * sg;
+}
+
+int main() {
+    FILE* file;
+    errno_t err = fopen_s(&file, "in.txt", "r");
+    if (err != 0 || file == NULL) {
+        std::cout << "Erroare'\n";
+        return 1;
+    }
+
+    char line[250];
+
+    while (fgets(line, sizeof(line), file) != NULL) {
+        int sum = 0;
+        char* ptr = line;
+        std::cout << "Linia " << line;
+        while (*ptr) {
+            while (*ptr && !isdigit(*ptr) && *ptr != '-') {
+                ptr++;
+            }
+            if (*ptr == '-' || isdigit(*ptr)) {
+                int num = my_atoi(ptr);
+                sum += num;
+                std::cout << "Numar " << num << '\n'; 
+                while (*ptr && (isdigit(*ptr) || *ptr == '-')) {
+                    ptr++;
+                }
+            }
+        }
+        std::cout << "Suma liniei: " << sum << "\n\n"; 
+    }
+    fclose(file);
+    return 0;
+}
