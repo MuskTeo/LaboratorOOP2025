@@ -1,0 +1,8 @@
+﻿  Sort.cpp
+C:\Users\dumit\source\repos\lab4\Sort.cpp(12,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\dumit\source\repos\lab4\Sort.cpp(52,8): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dumit\source\repos\lab4\Sort.cpp(77,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dumit\source\repos\lab4\Sort.cpp(101,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Source.cpp
+  Generating Code...
+  lab4.vcxproj -> C:\Users\dumit\source\repos\lab4\x64\Debug\lab4.exe
