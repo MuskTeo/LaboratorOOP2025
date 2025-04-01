@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\dumit\source\repos\Lab6\Masina.h(17,42): warning C4244: 'return': conversion from 'const float' to 'int', possible loss of data
+  (compiling source file 'Source.cpp')
+  
+  Lab6.vcxproj -> C:\Users\dumit\source\repos\Lab6\x64\Debug\Lab6.exe
