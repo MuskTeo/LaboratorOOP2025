@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\dumit\source\repos\Lab7\Source.cpp(4,15): warning C4244: 'return': conversion from 'long double' to 'float', possible loss of data
+C:\Users\dumit\source\repos\Lab7\Source.cpp(7,29): warning C4244: 'return': conversion from 'long double' to 'float', possible loss of data
+  Lab7.vcxproj -> C:\Users\dumit\source\repos\Lab7\x64\Debug\Lab7.exe
