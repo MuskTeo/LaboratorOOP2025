@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\dumit\source\repos\lab8\Source.cpp(25,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\dumit\source\repos\lab8\Source.cpp(27,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  lab8.vcxproj -> C:\Users\dumit\source\repos\lab8\x64\Debug\lab8.exe
